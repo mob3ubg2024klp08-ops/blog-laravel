@@ -20,19 +20,30 @@
 
     {{-- Isi Konten --}}
     <main class="container mx-auto mt-10 p-6 bg-white rounded-lg shadow">
-        <h2 class="text-3xl font-bold mb-4">Selamat Datang di MyWeb!</h2>
-        <p class="mb-4">Ini adalah halaman beranda yang dibuat dengan Laravel menggunakan Herd.</p>
+        <h2 class="text-3xl font-bold mb-4 text-blue-700">Selamat Datang di MyWeb!</h2>
+        <p class="mb-6">Ini adalah halaman beranda yang dibuat dengan Laravel menggunakan Herd.</p>
 
-        <div class="grid md:grid-cols-3 gap-4 mt-6">
+        {{-- Gambar Otomatis --}}
+        <div class="w-full mb-10">
+            <img src="https://picsum.photos/1200/400?random={{ rand(1, 100) }}" 
+                 alt="Gambar Otomatis" 
+                 class="rounded-lg shadow-lg w-full object-cover">
+        </div>
+
+        {{-- Daftar Fitur --}}
+        <div class="grid md:grid-cols-3 gap-6 mt-6">
             <div class="p-4 border rounded shadow hover:bg-blue-50 transition">
+                <img src="https://picsum.photos/400/250?random=1" alt="Fitur 1" class="rounded mb-3 w-full h-40 object-cover">
                 <h3 class="text-xl font-semibold mb-2">Fitur 1</h3>
                 <p>Deskripsi singkat fitur pertama.</p>
             </div>
             <div class="p-4 border rounded shadow hover:bg-blue-50 transition">
+                <img src="https://picsum.photos/400/250?random=2" alt="Fitur 2" class="rounded mb-3 w-full h-40 object-cover">
                 <h3 class="text-xl font-semibold mb-2">Fitur 2</h3>
                 <p>Deskripsi singkat fitur kedua.</p>
             </div>
             <div class="p-4 border rounded shadow hover:bg-blue-50 transition">
+                <img src="https://picsum.photos/400/250?random=3" alt="Fitur 3" class="rounded mb-3 w-full h-40 object-cover">
                 <h3 class="text-xl font-semibold mb-2">Fitur 3</h3>
                 <p>Deskripsi singkat fitur ketiga.</p>
             </div>
@@ -41,7 +52,7 @@
 
     {{-- Footer --}}
     <footer class="mt-10 bg-gray-200 py-4 text-center">
-        <p>&copy; {{ date('Y') }} MyWeb. Semua Hak Dilindungi.</p>
+        <p>&copy; {{ date('Y') }} 2301010029 / 2301010033. .</p>
     </footer>
 
 </body>
