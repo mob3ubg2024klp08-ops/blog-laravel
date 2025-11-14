@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beranda - MyWeb</title>
+    <title>Beranda - MyWeb wirahadi</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="bg-gray-50 text-gray-800">
@@ -13,14 +13,16 @@
         <h1 class="text-lg font-bold">MyWeb</h1>
         <ul class="flex space-x-4">
             <li><a href="{{ route('home') }}" class="hover:underline">Beranda</a></li>
-            <li><a href="#" class="hover:underline">Tentang</a></li>
-            <li><a href="#" class="hover:underline">Kontak</a></li>
+            <li><a href="{{route('post')}}" class="hover:underline">post</a></li>
+            <li><a href="{{route('Tentang')}}" class="hover:underline">Tentang</a></li>
         </ul>
     </nav>
+    <h1>nama : wirahadi saputra</h1>
+    <h2>nim : 2301010029</h2>
 
     {{-- Isi Konten --}}
     <main class="container mx-auto mt-10 p-6 bg-white rounded-lg shadow">
-        <h2 class="text-3xl font-bold mb-4 text-blue-700">Selamat Datang di MyWeb!</h2>
+        <h2 class="text-3xl font-bold mb-4 text-blue-700">di buat oleh wirahadi?2301010029</h2>
         <p class="mb-6">Ini adalah halaman beranda yang dibuat dengan Laravel menggunakan Herd.</p>
 
         {{-- Gambar Otomatis --}}

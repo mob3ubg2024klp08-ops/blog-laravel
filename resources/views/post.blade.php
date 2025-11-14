@@ -14,6 +14,7 @@
         <ul class="flex space-x-4">
             <li><a href="{{ route('home') }}" class="hover:underline">Beranda</a></li>
             <li><a href="{{ route('post') }}" class="hover:underline">Post</a></li>
+            <li><a href="{{ route('Tentang') }}" class="hover:underline">Tentang</a></li>
         </ul>
     </nav>
 
@@ -21,6 +22,9 @@
     <main class="container mx-auto mt-10 p-6 bg-white rounded-lg shadow">
         <h2 class="text-3xl font-bold mb-4">Daftar Postingan</h2>
         <p class="mb-6 text-gray-700">Berikut adalah contoh daftar postingan sederhana.</p>
+        <img src="https://picsum.photos/1200/400?random={{ rand(1, 100) }}" 
+                 alt="Gambar Otomatis" 
+                 class="rounded-lg shadow-lg w-full object-cover mb-6">
 
         <div class="grid md:grid-cols-2 gap-6">
             {{-- Postingan 1 --}}
@@ -29,6 +33,7 @@
                 <p class="text-gray-700 mb-2">
                     Laravel adalah framework PHP modern yang mempermudah pengembangan aplikasi web.
                 </p>
+                <img src="https://picsum.photos/400/250?random=4" alt="Fitur 1" class="rounded mb-3 w-full h-40 object-cover">
                 <a href="#" class="text-blue-600 hover:underline font-medium">Baca selengkapnya →</a>
             </article>
 
@@ -38,6 +43,7 @@
                 <p class="text-gray-700 mb-2">
                     Herd adalah tool lokal untuk menjalankan Laravel dengan cepat tanpa setup rumit.
                 </p>
+                <img src="https://picsum.photos/400/250?random=5" alt="Fitur 2" class="rounded mb-3 w-full h-40 object-cover">
                 <a href="#" class="text-blue-600 hover:underline font-medium">Baca selengkapnya →</a>
             </article>
 
@@ -47,6 +53,7 @@
                 <p class="text-gray-700 mb-2">
                     TailwindCSS membantu kamu membuat tampilan cantik tanpa menulis CSS panjang.
                 </p>
+                <img src="https://picsum.photos/400/250?random=6" alt="Fitur 3" class="rounded mb-3 w-full h-40 object-cover">    
                 <a href="#" class="text-blue-600 hover:underline font-medium">Baca selengkapnya →</a>
             </article>
 
@@ -56,6 +63,7 @@
                 <p class="text-gray-700 mb-2">
                     Pola Model-View-Controller membuat kode Laravel lebih terstruktur dan rapi.
                 </p>
+                <img src="https://picsum.photos/400/250?random=7" alt="Fitur 4" class="rounded mb-3 w-full h-40 object-cover">    
                 <a href="#" class="text-blue-600 hover:underline font-medium">Baca selengkapnya →</a>
             </article>
         </div>
